@@ -37,7 +37,7 @@ if [ ! -d $partdir ]; then
 fi
 
 # target partition without the slot suffix
-if [ -e ${partdir}/recovery_b ] || [ "$IS_AB" == "false" ]; then
+if [ -e ${partdir}/recovery_b ]; then
   target=${partdir}/recovery;
 else
   target=${partdir}/boot;
