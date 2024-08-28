@@ -26,7 +26,6 @@ ui_print " ";
 
 # /dev/tmp is safe for both booted and recovery installs
 tmp=/dev/tmp/twrp-install;
-# target partition without the slot suffix
 partdir=/dev/block/bootdevice/by-name
 
 if [ ! -d $partdir ]; then
